@@ -1,1 +1,0 @@
-print("busco trabalho como funcionario fantasma")
