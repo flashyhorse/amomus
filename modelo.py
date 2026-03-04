@@ -20,5 +20,4 @@ Produto: Pedido do material solicitado
 
 Quantidade: Quantia no qual é exigida
 
-Valor: 
-""""
+Valor: """
