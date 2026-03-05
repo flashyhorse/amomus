@@ -11,7 +11,6 @@ while True:
         print(f"Seu saldo é:{Saldo}")
         continue
 
-
     elif Escolha == 2:
         print("Informe quanto sera depositado")
         Depositar = float(input())
@@ -22,9 +21,17 @@ while True:
     elif Escolha == 3:
         print("Informe valor de saque")
         Saque = float(input())
-        Saldo = Saldo - Saque
-        print(f"Valor a atualizado para:{Saldo}")
+
+        if Saque <=0:
+            print("Valor inválido para saque")
+        elif Saque < Saldo:
+          Saldo = Saldo - Saque
+          print(f"Valor a atualizado para:{Saldo}")
+        elif Saque > Saldo:
+            print(f"Saldo insuficiente você possui:{Saldo}")
         continue
+
+             
 
     elif Escolha == 4:
         break
