@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Livros</title>
+</head>
+<body>
+
+<h1>Livros cadastrados</h1>
+
+<table border="1">
+    <tr>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Páginas</th>
+    </tr>
+
+    {% for livro in livros %}
+    <tr>
+        <td>{{ livro.titulo }}</td>
+        <td>{{ livro.autor }}</td>
+        <td>{{ livro.paginas }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br>
+<a href="/">Voltar</a>
+
+</body>
+</html>
